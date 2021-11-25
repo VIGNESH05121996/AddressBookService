@@ -47,3 +47,6 @@ ALTER TABLE addressbookservice_table ADD Type varchar(30);
 update addressbookservice_table set Type='Family' where FirstName='Praveen' or FirstName='Vignesh';
 update addressbookservice_table set Type='Friend' where FirstName='Akash' or FirstName='Azhar';
 update addressbookservice_table set Type='Profession' where FirstName='Vivek' or FirstName='Gokul';
+
+-----UC10-CountByType-----
+select count(FirstName) as CountPerson from addressbookservice_table group by Type; 
