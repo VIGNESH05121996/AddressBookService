@@ -29,3 +29,7 @@ select * from addressbookservice_table;
 -----UC5-DeletePersonUsingName-----
 DELETE from addressbookservice_table where FirstName='Vicky';
 select * from addressbookservice_table;
+
+-----UC6-RetrivePersonCityState-----
+select * from addressbookservice_table where City='Chennai';
+select * from addressbookservice_table where States='Tamil Nadu';
