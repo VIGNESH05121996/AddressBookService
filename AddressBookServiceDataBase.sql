@@ -33,3 +33,7 @@ select * from addressbookservice_table;
 -----UC6-RetrivePersonCityState-----
 select * from addressbookservice_table where City='Chennai';
 select * from addressbookservice_table where States='Tamil Nadu';
+
+-----UC7-SizeByCityState-----
+select count(City) as SizeOfCity from addressbookservice_table;
+select count(States) as SizeOfState from addressbookservice_table;
