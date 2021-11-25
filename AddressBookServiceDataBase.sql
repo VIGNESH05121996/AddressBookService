@@ -37,3 +37,6 @@ select * from addressbookservice_table where States='Tamil Nadu';
 -----UC7-SizeByCityState-----
 select count(City) as SizeOfCity from addressbookservice_table;
 select count(States) as SizeOfState from addressbookservice_table;
+
+-----UC8-SortAlphabeticallyFirstNameForGivenCity-----
+select * from addressbookservice_table where City='Chennai' order by FirstName;
