@@ -40,3 +40,10 @@ select count(States) as SizeOfState from addressbookservice_table;
 
 -----UC8-SortAlphabeticallyFirstNameForGivenCity-----
 select * from addressbookservice_table where City='Chennai' order by FirstName;
+
+-----UC9-AddType-----
+select * from addressbookservice_table;
+ALTER TABLE addressbookservice_table ADD Type varchar(30);
+update addressbookservice_table set Type='Family' where FirstName='Praveen' or FirstName='Vignesh';
+update addressbookservice_table set Type='Friend' where FirstName='Akash' or FirstName='Azhar';
+update addressbookservice_table set Type='Profession' where FirstName='Vivek' or FirstName='Gokul';
