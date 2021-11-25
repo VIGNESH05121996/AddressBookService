@@ -17,3 +17,7 @@ Email varchar(35)
 INSERT INTO addressbookservice_table(FirstName,LastName,Address,City,States,Zip,PhoneNumber,Email) VALUES('Vignesh','Marimuthu','HAPP','Trichy','Tamil Nadu',620025,9647812357,'vicky@gmail.com');
 INSERT INTO addressbookservice_table(FirstName,LastName,Address,City,States,Zip,PhoneNumber,Email) VALUES('Praveen','Muthu','NGO Colony','Dindigul','Tamil Nadu',624005,7458961235,'praveen@gmail.com');
 select * from addressbookservice_table;
+
+-----UC4-EditExistingContactPersonUsingName-----
+update addressbookservice_table set FirstName='Vicky' where FirstName='Praveen';
+select * from addressbookservice_table;
