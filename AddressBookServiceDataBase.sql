@@ -50,3 +50,8 @@ update addressbookservice_table set Type='Profession' where FirstName='Vivek' or
 
 -----UC10-CountByType-----
 select count(FirstName) as CountPerson from addressbookservice_table group by Type; 
+
+-----UC11-AddPersonToFriendAndFamily-----
+INSERT INTO addressbookservice_table(FirstName,LastName,Address,City,States,Zip,PhoneNumber,Email,Type) VALUES('Kalki','Raja','Pudhur','Trichy','Tamil Nadu',620035,9637562388,'kalki@gmail.com','Family');
+INSERT INTO addressbookservice_table(FirstName,LastName,Address,City,States,Zip,PhoneNumber,Email,Type) VALUES('Kalki','Raja','Pudhur','Trichy','Tamil Nadu',620035,9637562388,'kalki@gmail.com','Friend');
+select * from addressbookservice_table;
